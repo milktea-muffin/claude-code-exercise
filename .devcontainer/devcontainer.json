@@ -1,0 +1,39 @@
+{
+  "name": "satellite-mcp-server",
+  "dockerComposeFile": "./docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "remoteUser": "vscode",
+  "features": {
+    "ghcr.io/devcontainers-extra/features/uv:1": {
+      "version": "latest"
+    },
+    "ghcr.io/stu-bell/devcontainer-features/claude-code:0": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {
+      "installDirectlyFromGitHubRelease": true,
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "22"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "charliermarsh.ruff",
+        "ms-python.mypy-type-checker",
+        "ms-toolsai.jupyter"
+      ]
+    }
+  },
+  "remoteEnv": {
+    "PROJECT_NAME": "satellite-mcp-server",
+    "PYTHON_VERSION": "3.13",
+    "UV_INIT_BARE": "false",
+    "INSTALL_IPYKERNEL": "false"
+  },
+  "postCreateCommand": "make post-create",
+  "mounts": []
+}

@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    image: mcp-server
+    container_name: mcp-server
+    volumes:
+      - ..:/workspace:cached
+    command: sleep infinity
