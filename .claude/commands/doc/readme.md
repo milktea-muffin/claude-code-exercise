@@ -13,5 +13,5 @@ package.json 等があればそれも参照する。
 ## 手順
 
 1. PRD、DESIGN、package.json 等を読み込む
-1. readme-writer スキルの手順に従って README を作成する
-1. プロジェクトルートに README.md を保存する
+2. readme-writer スキルの手順に従って README を作成する
+3. プロジェクトルートに README.md を保存する
